@@ -1,0 +1,11 @@
+meta-hio readme
+========================================================
+1.recipes-connectivity
+2.recipes-graphics
+wifi,panel
+
+3.recipes-ios
+can,gpio,serial
+
+4.recipes-multimedia
+5.recipes-othres
