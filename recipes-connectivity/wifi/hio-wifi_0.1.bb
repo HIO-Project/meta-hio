@@ -10,7 +10,6 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 PR = "r0"
 
 SRC_URI = "file://cfg80211.ko         \
-           file://version             \
            file://wlan0_up.sh         \
            file://wlan.ko             \
            file://wpa_supplicant.conf"

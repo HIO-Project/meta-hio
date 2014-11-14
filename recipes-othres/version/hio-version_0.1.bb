@@ -11,8 +11,7 @@ PR = "r0"
 
 #DEPENDS = "core-image-minimal"
 DEPENDS = "hio-wifi"
-SRC_URI = "file://version \
-           file://version_test "
+SRC_URI = "file://version "
 
 S = "${WORKDIR}"
 
