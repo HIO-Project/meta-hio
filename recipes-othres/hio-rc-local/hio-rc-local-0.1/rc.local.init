@@ -36,5 +36,5 @@ case "$1" in
 esac
 
 #fffffffffffffffffffffffffffffffffffff
-cd /usr/share/wifi
-insmod cfg80211.ko;insmod wlan.ko
+#cd /usr/share/wifi
+#insmod cfg80211.ko;insmod wlan.ko
