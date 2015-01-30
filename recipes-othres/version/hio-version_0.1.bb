@@ -9,7 +9,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 PR = "r0"
 
-DEPENDS = "hio-image-minimal hio-image-fb hio-image-x11"
+DEPENDS = "hio-image-minimal hio-image-fb"
 SRC_URI = "file://version "
 
 S = "${WORKDIR}"
