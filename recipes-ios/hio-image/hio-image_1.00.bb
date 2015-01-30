@@ -53,11 +53,9 @@ INSANE_SKIP_${PN} = "ldflags already-stripped"
 #}
 ALLOW_EMPTY_${PN} = "1"
 do_deploy() {
-		#cp ${WORKDIR}/git/README.md ${DEPLOYDIR}/${PN}
-		cp ${WORKDIR}/git/* ${DEPLOYDIR}/hio-image
+		cp ${WORKDIR}/git/* ${DEPLOYDIR}/${PN}-${PV}
 }
 
 addtask deploy before do_package after do_install
-#do_deploy[dirs] += "${DEPLOYDIR}/${PN}"
-do_deploy[dirs] += "${DEPLOYDIR}/hio-image"
+do_deploy[dirs] += "${DEPLOYDIR}/${PN}-${PV}"
 
