@@ -9,8 +9,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 PR = "r0"
 
-#DEPENDS = "core-image-minimal"
-DEPENDS = "hio-wifi"
+DEPENDS = "hio-image-minimal hio-image-fb hio-image-x11"
 SRC_URI = "file://version "
 
 S = "${WORKDIR}"
@@ -27,9 +26,15 @@ do_install() {
 	     echo "------------------------"
 
 	    #version
-            echo hio-board-dl-v1.00 > ${WORKDIR}/version
-	    date >> ${WORKDIR}/version
-            install -m 0644 ${WORKDIR}/version ${D}/	    
+            #echo hio-board-dl-v1.00 > ${WORKDIR}/version
+	    #date >> ${WORKDIR}/version
+            #install -m 0644 ${WORKDIR}/version ${D}/	    
+	    date_version_1=hio-board-dl-
+	    date_version_2=$(date "+%Y%m%d%H%M%S")
+	    date_version_3=-R1.00
+
+	    echo $date_version_1$date_version_2$date_version_3 > ${WORKDIR}/version
+	    install -m 0644 ${WORKDIR}/version ${D}/
 }
 
 #do_deploy () {
