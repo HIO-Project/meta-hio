@@ -1,0 +1,25 @@
+From f63b995aef8d34a52c03791c1c935e72128d1c0b Mon Sep 17 00:00:00 2001
+From: hbuyocto <hbuyocto@hbuyocto.(none)>
+Date: Fri, 13 Feb 2015 02:03:10 -0800
+Subject: [PATCH] R1.01 image
+
+---
+ recipes-ios/hio-image/hio-image_1.00.bb |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/recipes-ios/hio-image/hio-image_1.00.bb b/recipes-ios/hio-image/hio-image_1.00.bb
+index dda6110..a65fb10 100644
+--- a/recipes-ios/hio-image/hio-image_1.00.bb
++++ b/recipes-ios/hio-image/hio-image_1.00.bb
+@@ -13,7 +13,7 @@ PR = "r0"
+ #DEPENDS = "hio-image-minimal hio-image-fb"
+ DEPENDS = "core-image-minimal"
+ 
+-SRCREV = "f1a0961dfdce3063127bb005c7b54d0c1161cff4"
++SRCREV = "88ced3965bb03e1f8dc39e73890e169d2f66da03"
+ SRC_URI = "git://github.com/HIO-Project/hio-image.git;branch=master"
+ 
+ S = "${WORKDIR}"
+-- 
+1.7.9.5
+
