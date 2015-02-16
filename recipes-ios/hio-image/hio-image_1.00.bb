@@ -13,8 +13,7 @@ PR = "r0"
 #DEPENDS = "hio-image-minimal hio-image-fb"
 DEPENDS = "core-image-minimal"
 
-SRC_URI = "https://github.com/HIO-Project/hio-image/archive/R1.01.tar.gz	\
-	   file://0001-R1.01-image.patch "
+SRC_URI = "https://github.com/HIO-Project/hio-image/archive/R1.01.tar.gz	"
 SRC_URI[md5sum] = "f0d4a67da22b74e5a0c65a90ab85ca6e"
 
 S = "${WORKDIR}"
