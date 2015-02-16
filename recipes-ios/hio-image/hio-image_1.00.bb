@@ -13,10 +13,8 @@ PR = "r0"
 #DEPENDS = "hio-image-minimal hio-image-fb"
 DEPENDS = "core-image-minimal"
 
-#SRCREV = "087cae4140b6ab4f455098f520fbc2fa70918fc0"
-SRCREV = "ca29344414e668e22c8324b2ff92df48b8a174af"
-#SRC_URI = "git://github.com/huhaijiang1984/habey-test.git;branch=master"
-SRC_URI = "git://github.com/HIO-Project/hio-image.git;branch=R1.00"
+RC_URI = "https://github.com/HIO-Project/hio-image/archive/R1.00.tar.gz"
+SRC_URI[md5sum] = "e65c59350c1f8d9a2f8c94b11aee0bca"
 
 S = "${WORKDIR}"
 
@@ -56,7 +54,7 @@ INSANE_SKIP_${PN} = "ldflags already-stripped"
 #}
 ALLOW_EMPTY_${PN} = "1"
 do_deploy() {
-		cp ${WORKDIR}/git/* ${DEPLOYDIR}/${PN}-${PV}
+		cp ${WORKDIR}/hio-image*/* ${DEPLOYDIR}/${PN}-${PV}
 }
 
 addtask deploy before do_package after do_install
