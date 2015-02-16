@@ -1,25 +1,27 @@
-From f63b995aef8d34a52c03791c1c935e72128d1c0b Mon Sep 17 00:00:00 2001
+From 84a37c4686e9f086d608f9e48832ab44d47c14b7 Mon Sep 17 00:00:00 2001
 From: hbuyocto <hbuyocto@hbuyocto.(none)>
-Date: Fri, 13 Feb 2015 02:03:10 -0800
+Date: Mon, 16 Feb 2015 05:33:22 -0800
 Subject: [PATCH] R1.01 image
 
 ---
- recipes-ios/hio-image/hio-image_1.00.bb |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ recipes-ios/hio-image/hio-image_1.00.bb |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/recipes-ios/hio-image/hio-image_1.00.bb b/recipes-ios/hio-image/hio-image_1.00.bb
-index dda6110..a65fb10 100644
+index 105c14d..17ef101 100644
 --- a/recipes-ios/hio-image/hio-image_1.00.bb
 +++ b/recipes-ios/hio-image/hio-image_1.00.bb
-@@ -13,7 +13,7 @@ PR = "r0"
+@@ -13,8 +13,8 @@ PR = "r0"
  #DEPENDS = "hio-image-minimal hio-image-fb"
  DEPENDS = "core-image-minimal"
  
--SRCREV = "f1a0961dfdce3063127bb005c7b54d0c1161cff4"
-+SRCREV = "88ced3965bb03e1f8dc39e73890e169d2f66da03"
- SRC_URI = "git://github.com/HIO-Project/hio-image.git;branch=master"
+-RC_URI = "https://github.com/HIO-Project/hio-image/archive/R1.00.tar.gz"
+-SRC_URI[md5sum] = "e65c59350c1f8d9a2f8c94b11aee0bca"
++RC_URI = "https://github.com/HIO-Project/hio-image/archive/R1.01.tar.gz"
++SRC_URI[md5sum] = "f0d4a67da22b74e5a0c65a90ab85ca6e"
  
  S = "${WORKDIR}"
+ 
 -- 
 1.7.9.5
 
