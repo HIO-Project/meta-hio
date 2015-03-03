@@ -28,6 +28,6 @@ do_install() {
 	     echo "------------------------"
 
 	    #mac
-	    install -d ${D}${sysconfdir}/udhcpc.d
-            install -m 0777 ${WORKDIR}/simple.script ${D}${sysconfdir}/udhcpc.d/50default	    
+	    #install -d ${D}${sysconfdir}/udhcpc.d
+            #install -m 0777 ${WORKDIR}/simple.script ${D}${sysconfdir}/udhcpc.d/50default	    
 }
