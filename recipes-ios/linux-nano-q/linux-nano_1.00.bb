@@ -12,7 +12,7 @@ SRC_URI = "git://github.com/HIO-Project/linux-imx6-nano-imx_3.10.17_1.0.1_ga.git
 
 LOCALVERSION = "-1.0.0_ga+yocto"
 SRCBRANCH = "master"
-SRCREV = "72eb5bf1ab6a5aeaad6ce88d547181773985b612"
+SRCREV = "0ef31c876c083ff97f96ccef90c84019b52771b2"
 DEPENDS += "lzop-native "
 COMPATIBLE_MACHINE = "(mx6)"
 COMPATIBLE_MACHINE = "(hio-nano-q)"
