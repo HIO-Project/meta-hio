@@ -8,7 +8,7 @@ COMPATIBLE_MACHINE = "(hio-imx6q-board|hio-imx6dl-board)"
 DEPENDS_mxs += "elftosb-native openssl-native"
 PROVIDES += "u-boot"
 
-PV = "hio"
+#PV = "hio"
 
 SRC_URI = "git://github.com/HIO-Project/u-boot-imx6-hio.git;branch=2014.01"
 SRCREV = "${AUTOREV}"
