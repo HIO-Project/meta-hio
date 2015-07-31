@@ -8,7 +8,7 @@ require recipes-kernel/linux/linux-dtb.inc
 SUMMARY = "Linux kernel for hio boards"
 
 SRC_URI = "git://github.com/HIO-Project/linux-imx6-hio.git;branch=${SRCBRANCH} \
-           file://ppc4507_defconfig"
+           file://defconfig"
 
 LOCALVERSION = "-1.0.0_ga+yocto"
 SRCBRANCH = "3.10.17"
