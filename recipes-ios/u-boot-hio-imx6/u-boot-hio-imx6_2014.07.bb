@@ -20,4 +20,4 @@ EXTRA_OEMAKE += 'HOSTCC="${BUILD_CC} ${BUILD_CPPFLAGS}" \
 
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-COMPATIBLE_MACHINE = "(hio-imx6q-board|hio-imx6dl-board|hio-imx6dl-poe|hio-imx6dl-uart5|hio-imx6dl-ppc4507|hio-imx6dl-ppc4510|hio-imx6dl-ppc4535)"
+COMPATIBLE_MACHINE = "(hio-imx6q-board|hio-imx6q-ppc4507|hio-imx6dl-board|hio-imx6dl-poe|hio-imx6dl-uart5|hio-imx6dl-ppc4507|hio-imx6dl-ppc4510|hio-imx6dl-ppc4535)"

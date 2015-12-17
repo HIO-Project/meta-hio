@@ -19,4 +19,4 @@ SCMVERSION = "n"
 
 DEPENDS += "lzop-native "
 COMPATIBLE_MACHINE = "(mx6)"
-COMPATIBLE_MACHINE = "(hio-imx6q-board|hio-imx6dl-board|hio-imx6dl-poe|hio-imx6dl-uart5)"
+COMPATIBLE_MACHINE = "(hio-imx6q-board|hio-imx6q-ppc4507|hio-imx6dl-board|hio-imx6dl-poe|hio-imx6dl-uart5)"
