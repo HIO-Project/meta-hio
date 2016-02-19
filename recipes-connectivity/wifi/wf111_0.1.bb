@@ -13,18 +13,19 @@ S="${WORKDIR}/git/"
 
 #inherit allarch
 PACKAGE_ARCH = "all"
-INSANE_SKIP_${PN} += "installed-vs-shipped"
+#INSANE_SKIP_${PN} += "installed-vs-shipped"
+INHIBIT_PACKAGE_STRIP = "1"
 
-do_compile() {
-}
+#do_compile() {
+#}
 
 do_install() {
   install -d ${D}/lib/modules
   install -d ${D}/lib/firmware/unifi-sdio
   install -d ${D}/usr/sbin
 
-  install -m 0777 ${S}output/lib/firmware/unifi-sdio/* ${D}/lib/firmware/unifi-sdio/
-  install -m 0777 ${S}output/usr/sbin/* ${D}/usr/sbin/
+  install -m 0644 ${S}output/lib/firmware/unifi-sdio/* ${D}/lib/firmware/unifi-sdio/
+  install -m 777 ${S}output/usr/sbin/* ${D}/usr/sbin/
 
   cp -rf ${S}output/lib/modules/* ${D}/lib/modules/
 }
@@ -35,3 +36,4 @@ FILES_${PN} += " \
 	${base_libdir}/modules/*		\
         ${sbindir}/*    \
 "
+
