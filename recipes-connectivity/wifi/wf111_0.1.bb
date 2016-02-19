@@ -23,8 +23,8 @@ do_install() {
   install -d ${D}/lib/firmware/unifi-sdio
   install -d ${D}/usr/sbin
 
-  install -m 0644 ${S}output/lib/firmware/unifi-sdio/* ${D}/lib/firmware/unifi-sdio/
-  install -m 0644 ${S}output/usr/sbin/* ${D}/usr/sbin/
+  install -m 0777 ${S}output/lib/firmware/unifi-sdio/* ${D}/lib/firmware/unifi-sdio/
+  install -m 0777 ${S}output/usr/sbin/* ${D}/usr/sbin/
 
   cp -rf ${S}output/lib/modules/* ${D}/lib/modules/
 }
